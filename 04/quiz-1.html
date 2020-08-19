@@ -6,11 +6,25 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>짝수일까, 홀수일까</title>
 </head>
+<style>
+	body {
+		text-align: center;
+	}
+</style>
 <body>
 	<h2>짝수일까, 홀수일까</h2>
 
 	<script>
-	
+		var input = prompt("숫자를 입력하시오.");
+		if (/^[0-9]*$/.test(input)) {
+			if (input % 2 == 1)
+				document.write(input + "는 홀수입니다.");
+			else
+				document.write(input + "은 짝수입니다.");
+			break;
+		}
+		else
+			alert("입력값이 잘못되었습니다.");
 	</script>
 </body>
 </html>

@@ -14,5 +14,19 @@
 </head>
 <body>
 	<h2>3의 배수 찾기</h2>
+	<script>
+		var input = prompt ("숫자를 입력하세요.");
+		var num = 3;
+		var cnt = 0;
+
+		while (num <= input) {
+			document.write(num + ", ");
+			num += 3;
+			cnt++;
+		}
+
+		document.write("<br><br>")
+		document.write("3의 배수의 갯수 : " + cnt);
+	</script>
 </body>
 </html>
