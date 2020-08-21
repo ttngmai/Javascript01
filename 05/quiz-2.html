@@ -7,6 +7,16 @@
 	<title>연습문제 2</title>
 </head>
 <body>
-	
+	<button onclick="compare()">compare</button>
+	<script>
+		function compare() {
+			var num1 = parseInt(prompt("비교할 첫 번째 숫자"));
+			var num2 = parseInt(prompt("비교할 두 번째 숫자"));
+
+			num1 === num2 ? alert(num1 + "과 " + num2 + "는 같습니다.")
+				: num1 > num2 ? alert(num1 + "(이)가 " + num2 + "보다 큽니다.")
+				: alert(num2 + "(이)가 " + num1 + "보다 큽니다.");
+		}
+	</script>
 </body>
 </html>
